@@ -1,6 +1,8 @@
 (function () {
   var c = window.SITE || {};
   var popup = c.popup || {};
+  var currentUrl = popup.url || "";
+
   function setText(id, value) {
     var el = document.getElementById(id);
     if (el && value != null) el.textContent = value;
@@ -25,42 +27,42 @@
   var popupImg = document.getElementById("popupImage");
   if (popupImg && popup.image) popupImg.src = popup.image;
 
-  function go(url) {
-    if (!url) return;
-    window.open(url, "_blank", "noopener");
-  }
-
-  function bindHidden(selector, url) {
-    document.querySelectorAll(selector).forEach(function (el) {
-      el.removeAttribute("href");
-      el.setAttribute("role", "button");
-      el.addEventListener("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        go(url);
-      });
-    });
-  }
-
-  bindHidden(".js-live", c.liveUrl);
-  bindHidden(".js-premium", c.premiumUrl);
-  bindHidden(".js-photos", c.photosUrl);
-
   var overlay = document.getElementById("funnelOverlay");
   var join = document.getElementById("popupJoin");
-  var popupUrl = popup.url || "";
-  if (join) {
-    join.removeAttribute("href");
-    join.addEventListener("click", function (e) { e.preventDefault(); go(popupUrl); });
-  }
-  function openFunnel(e) {
-    if (e) { e.preventDefault(); e.stopPropagation(); }
+
+  function openOffer(url, image) {
+    currentUrl = url || popup.url || "";
+    if (popupImg && image) popupImg.src = image;
     if (!overlay) return;
     overlay.hidden = false;
     overlay.style.cssText = "position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.78)";
     document.documentElement.classList.add("funnel-open");
     document.body.classList.add("funnel-open");
   }
+
+  function bind(selector, url, image) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.removeAttribute("href");
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openOffer(url, image);
+      });
+    });
+  }
+
+  bind(".js-live", c.liveUrl, c.liveImage);
+  bind(".js-premium", c.premiumUrl, c.premiumImage);
+  bind(".js-photos", c.photosUrl, c.photosImage);
+
+  if (join) {
+    join.removeAttribute("href");
+    join.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (currentUrl) window.open(currentUrl, "_blank", "noopener");
+    });
+  }
+
   function closeFunnel(e) {
     if (e) e.preventDefault();
     if (!overlay) return;
@@ -69,7 +71,6 @@
     document.documentElement.classList.remove("funnel-open");
     document.body.classList.remove("funnel-open");
   }
-  document.querySelectorAll(".js-open-funnel").forEach(function (el) { el.addEventListener("click", openFunnel); });
   var closeBtn = document.getElementById("popupClose");
   if (closeBtn) closeBtn.addEventListener("click", closeFunnel);
   if (overlay) overlay.addEventListener("click", function (e) { if (e.target === overlay) closeFunnel(e); });
