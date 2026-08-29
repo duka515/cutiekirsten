@@ -8,8 +8,13 @@ window.SITE = {
   dmcaEmail: "myconntact1@gmail.com",
 
   liveUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
+  liveImage: "assets/popup-live.svg",
+
   premiumUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
+  premiumImage: "assets/popup-premium.svg",
+
   photosUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
+  photosImage: "assets/popup-photos.svg",
 
   popup: {
     enabled: true,
