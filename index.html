@@ -7,8 +7,8 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <title>CutieKirsten</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=3" />
-  <link rel="stylesheet" href="css/open-app.css?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="css/open-app.css?v=4" />
 </head>
 <body>
   <div id="fbOverlay" class="fb-overlay" hidden>
@@ -47,7 +47,12 @@
         <a class="shot js-photos" href="#"><img src="assets/g1.svg" alt="" /></a>
         <a class="shot js-photos" href="#"><img src="assets/g2.svg" alt="" /></a>
         <a class="shot js-photos" href="#"><img src="assets/g3.svg" alt="" /></a>
-        <a class="shot js-photos" href="#"><img src="assets/g4.svg" alt="" /></a>
+        <a class="shot locked js-photos" href="#">
+          <img src="assets/g4.svg" alt="" />
+          <span class="lock-overlay">
+            <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>
+          </span>
+        </a>
       </div>
     </section>
   </main>
@@ -62,7 +67,7 @@
       <span id="popupJoin" class="funnel-btn" role="button">Join for Free</span>
     </div>
   </div>
-  <script src="js/config.js?v=3"></script>
-  <script src="js/app.js?v=3"></script>
+  <script src="js/config.js?v=4"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 </html>
