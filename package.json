@@ -1,0 +1,7 @@
+{
+  "name": "cutiekirsten",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp -r index.html dmca.html manifest.webmanifest css js assets dist/"
+  }
+}
