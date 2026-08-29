@@ -1,11 +1,11 @@
 window.SITE = {
-  name: "CutieKirsten",
+  name: "Cutie Kirsten",
   tagline: "Your favorite creator for exclusive content, live shows & more",
   flag: "🇺🇸",
-  videos: 459,
-  photos: 981,
+  videos: 239,
+  photos: 781,
   avatar: "assets/avatar.svg",
-  dmcaEmail: "dmca@example.com",
+  dmcaEmail: "myconntact1@gmail.com",
   popup: {
     enabled: true,
     brand: "Jerkmate",
@@ -17,6 +17,6 @@ window.SITE = {
     ],
     image: "assets/popup.svg",
     button: "Join for Free",
-    url: "https://example.com/affiliate"
+    url: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT"
   }
 };
