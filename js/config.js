@@ -4,17 +4,17 @@ window.SITE = {
   flag: "🇺🇸",
   videos: 239,
   photos: 781,
-  avatar: "assets/avatar.svg",
+  avatar: "avatar: "assets/avatar.jpg",",
   dmcaEmail: "myconntact1@gmail.com",
 
   liveUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
-  liveImage: "assets/popup-live.svg",
+  liveImage: "assets/popup-live.jpg",
 
   premiumUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
-  premiumImage: "assets/popup-premium.svg",
+  premiumImage: "assets/popup-premium.jpg",
 
   photosUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
-  photosImage: "assets/popup-photos.svg",
+  photosImage: "assets/popup-photos.jpg",
 
   popup: {
     enabled: true,
@@ -25,7 +25,7 @@ window.SITE = {
       "2- Get the Free Lifetime Membership",
       "3- Enjoy thousands of models like me"
     ],
-    image: "assets/popup.svg",
+    image: "assets/popup.jpg",
     button: "Join for Free",
     url: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT"
   }
