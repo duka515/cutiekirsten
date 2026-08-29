@@ -24,14 +24,34 @@
   if (popup.button) setText("popupButton", popup.button);
   var popupImg = document.getElementById("popupImage");
   if (popupImg && popup.image) popupImg.src = popup.image;
+
+  function go(url) {
+    if (!url) return;
+    window.open(url, "_blank", "noopener");
+  }
+
+  function bindHidden(selector, url) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.removeAttribute("href");
+      el.setAttribute("role", "button");
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        go(url);
+      });
+    });
+  }
+
+  bindHidden(".js-live", c.liveUrl);
+  bindHidden(".js-premium", c.premiumUrl);
+  bindHidden(".js-photos", c.photosUrl);
+
   var overlay = document.getElementById("funnelOverlay");
   var join = document.getElementById("popupJoin");
   var popupUrl = popup.url || "";
-  function goAffiliate() { if (popupUrl) window.open(popupUrl, "_blank", "noopener"); }
   if (join) {
     join.removeAttribute("href");
-    join.setAttribute("role", "button");
-    join.addEventListener("click", function (e) { e.preventDefault(); goAffiliate(); });
+    join.addEventListener("click", function (e) { e.preventDefault(); go(popupUrl); });
   }
   function openFunnel(e) {
     if (e) { e.preventDefault(); e.stopPropagation(); }
@@ -54,6 +74,7 @@
   if (closeBtn) closeBtn.addEventListener("click", closeFunnel);
   if (overlay) overlay.addEventListener("click", function (e) { if (e.target === overlay) closeFunnel(e); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeFunnel(); });
+
   var ua = navigator.userAgent || "";
   var onlyFacebook = /FBAN|FBAV|FB_IAB|FB4A|FBIOS|Facebook/i.test(ua) && !/Instagram|Snapchat|TikTok|Bytedance/i.test(ua);
   var android = /Android/i.test(ua);
