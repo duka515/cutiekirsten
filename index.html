@@ -7,14 +7,11 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <title>CutieKirsten</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=6" />
-  <link rel="stylesheet" href="css/open-app.css?v=6" />
+  <link rel="stylesheet" href="css/style.css?v=8" />
+  <link rel="stylesheet" href="css/open-app.css?v=8" />
   <style>.online{box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:livePulse 1.4s ease-out infinite;z-index:2}.online::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:3px solid rgba(34,197,94,.55);animation:liveRing 1.4s ease-out infinite}@keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.75);transform:scale(1)}70%{box-shadow:0 0 0 12px rgba(34,197,94,0);transform:scale(1.08)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0);transform:scale(1)}}@keyframes liveRing{0%{transform:scale(.7);opacity:.9}100%{transform:scale(1.7);opacity:0}}</style>
 </head>
 <body>
-  <div id="fbOverlay" class="fb-overlay" hidden>
-    <a id="openAppBtn" class="open-app-btn" href="#">Are you 18 or older? CLICK HERE TO CONTINUE...</a>
-  </div>
   <main class="page">
     <section class="hero">
       <div class="profile">
@@ -56,17 +53,21 @@
     </section>
   </main>
   <footer><a href="dmca.html">DMCA</a><span>© <span id="year">2026</span> <span id="footerName">CutieKirsten</span></span></footer>
-  <div id="funnelOverlay" class="funnel-overlay" hidden style="position:fixed;inset:0;z-index:2147483647;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.78);">
-    <div class="funnel-card" style="position:relative;width:min(400px,100%);background:#1c1a22;border-radius:18px;padding:26px 18px 18px;text-align:center;">
+  <div id="funnelOverlay" class="funnel-overlay" hidden style="position:fixed;inset:0;z-index:2147483647;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(8,6,15,.72);">
+    <div class="funnel-card">
       <button id="popupClose" class="funnel-x" type="button">×</button>
+      <p class="funnel-kicker" id="popupKicker">Exclusive access</p>
       <h2 id="popupName">CutieKirsten</h2>
-      <p id="popupHeadline">Watch explicit content for FREE in "<span>Jerkmate</span>"</p>
-      <div id="popupSteps" class="funnel-steps"><div>1- Create a FREE Jerkmate Account</div><div>2- Get the Free Lifetime Membership</div><div>3- Enjoy thousands of models like me</div></div>
-      <img id="popupImage" class="funnel-banner" src="assets/popup-photos.gif" alt="" />
-      <span id="popupJoin" class="funnel-btn" role="button">Join for Free</span>
+      <p id="popupHeadline">Create a free account to continue</p>
+      <div id="popupSteps" class="funnel-steps">
+        <div>Create a free account</div>
+        <div>Unlock instant access</div>
+        <div>Watch private content</div>
+      </div>
+      <span id="popupJoin" class="funnel-btn" role="button">Create free account</span>
     </div>
   </div>
-  <script src="js/config.js?v=6"></script>
-  <script src="js/app.js?v=6"></script>
+  <script src="js/config.js?v=8"></script>
+  <script src="js/app.js?v=8"></script>
 </body>
 </html>
