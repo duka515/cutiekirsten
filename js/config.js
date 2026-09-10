@@ -6,15 +6,15 @@ window.SITE = {
   photos: 781,
   avatar: "assets/avatar.jpeg",
   dmcaEmail: "myconntact1@gmail.com",
-  liveUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
-  premiumUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
-  photosUrl: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT",
+  liveUrl: "https://a.vlmjm1.com/1f6cd067-a2e7-4635-9d2a-aa73958096ed?aff_id=133986&aff_sub5=SF_006OG00000QjUHW&aff_sub=TTT",
+  premiumUrl: "https://a.vlmjm1.com/1f6cd067-a2e7-4635-9d2a-aa73958096ed?aff_id=133986&aff_sub5=SF_006OG00000QjUHW&aff_sub=TTT",
+  photosUrl: "https://a.vlmjm1.com/1f6cd067-a2e7-4635-9d2a-aa73958096ed?aff_id=133986&aff_sub5=SF_006OG00000QjUHW&aff_sub=TTT",
   popup: {
     enabled: true,
     brand: "",
     headline: "Create a free account to continue",
     steps: ["Create a free account","Unlock instant access","Watch private content"],
     button: "Create free account",
-    url: "https://t.mbjrkmms.com/133986/8780/38462?aff_sub3=TC_LW9H5CT9&aff_sub5=SF_006OG00000NbNlB&aff_sub=TTT"
+    url: "https://a.vlmjm1.com/1f6cd067-a2e7-4635-9d2a-aa73958096ed?aff_id=133986&aff_sub5=SF_006OG00000QjUHW&aff_sub=TTT"
   }
 };
